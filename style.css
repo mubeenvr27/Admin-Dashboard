@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #007bff;
+    color: white;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 20px;
+}
+
+.sidebar-branding {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar-branding .material-icons {
+    font-size: 2em;
+}
+
+.sidebar-nav {
+    display: grid;
+    gap: 10px;
+}
+
+.sidebar-nav div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar-nav div:hover {
+    background-color: #0056b3;
+}
+
+.main-content {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow: auto;
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-info button:hover {
+    background-color: #0056b3;
+}
+
+.user-info .material-icons {
+    font-size: 1.5em;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.main-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.projects {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.projects h2,
+.announcements h2,
+.trending h2 {
+    margin-bottom: 10px;
+}
+
+.project-card,
+.announcement-card,
+.trending-card {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card .material-icons,
+.announcement-card .material-icons,
+.trending-card .material-icons {
+    font-size: 1em;
+    color: #666;
+}
+
+.announcements {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.trending {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+/* Visualization aids */
+
+.sidebar,
+.header,
+.projects,
+.announcements,
+.trending {
+    border: 1px solid red;
+}
