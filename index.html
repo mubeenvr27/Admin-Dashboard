@@ -6,68 +6,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <div class="container">
-        <aside class="sidebar">
-            <div class="sidebar-branding">
-                <span class="material-icons">dashboard</span>
-                <h2>Dashboard</h2>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1><i class="fas fa-table-cells"></i> Dashboard</h1>
             </div>
-            <nav class="sidebar-nav">
-                <div><span class="material-icons">home</span> Home</div>
-                <div><span class="material-icons">person</span> Profile</div>
-                <div><span class="material-icons">message</span> Messages</div>
-                <div><span class="material-icons">history</span> History</div>
-                <div><span class="material-icons">task</span> Tasks</div>
-                <div><span class="material-icons">people</span> Communities</div>
-                <div><span class="material-icons">settings</span> Settings</div>
-                <div><span class="material-icons">help</span> Support</div>
-                <div><span class="material-icons">lock</span> Privacy</div>
-            </nav>
-        </aside>
-        <main class="main-content">
-            <header class="header">
-                <div class="search-bar">
-                    <input type="text" placeholder="Search...">
+            <div class="nav-section">
+                <ul class="nav-home">
+                    <li><i class="fas fa-home"></i> Home</li>
+                    <li><i class="fas fa-user"></i> Profile</li>
+                    <li><i class="fas fa-message"></i> Messages</li>
+                    <li><i class="fas fa-clock"></i> History</li>
+                    <li><i class="fas fa-list-check"></i> Tasks</li>
+                    <li><i class="fas fa-users"></i> Communities</li>
+                </ul>
+                <ul class="nav-settings">
+                    <li><i class="fas fa-gear"></i> Settings</li>
+                    <li><i class="fas fa-question-circle"></i> Support</li>
+                    <li><i class="fas fa-shield"></i> Privacy</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-info">
+                <i class="fas fa-bell"></i>
+                <div class="avatar-small">
+                    <img src="Odin.png" alt="Odin" />
                 </div>
-                <div class="user-info">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                    <span class="material-icons">notifications</span>
-                    <img src="https://via.placeholder.com/40" alt="User Avatar">
-                    <span>Morgan Oakley (@morgan)</span>
+                <span class="username">Morgan Oakley</span>
+            </div>
+            <div class="greeting">
+                <div class="avatar-large"></div>
+                <div>
+                    <p>Hi there,</p>
+                    <h2>Morgan Oakley (@morgan)</h2>
                 </div>
-            </header>
-            <section class="main-body">
-                <div class="projects">
-                    <h2>Your Projects</h2>
-                    <div class="project-card">Super Cool Project <span class="material-icons">star</span><span class="material-icons">visibility</span><span class="material-icons">edit</span></div>
-                    <div class="project-card">Less Cool Project <span class="material-icons">star</span><span class="material-icons">visibility</span></div>
-                    <div class="project-card">Impossible App <span class="material-icons">star</span><span class="material-icons">visibility</span></div>
-                    <div class="project-card">Easy Peasy App <span class="material-icons">star</span><span class="material-icons">visibility</span></div>
-                    <div class="project-card">Ad Blocker <span class="material-icons">star</span><span class="material-icons">visibility</span></div>
-                    <div class="project-card">Money Maker <span class="material-icons">star</span><span class="material-icons">visibility</span></div>
+            </div>
+            <div class="buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="projects">
+                <h3>Your Projects</h3>
+                <div class="project-cards">
+                    <div class="card">
+                        <h4>Super Cool Project</h4>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        <div class="card-icons">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-share-nodes"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>Impossible App</h4>
+                        <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                        <div class="card-icons">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-share-nodes"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>Ad Blocker</h4>
+                        <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                        <div class="card-icons">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-share-nodes"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>Less Cool Project</h4>
+                        <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor.</p>
+                        <div class="card-icons">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-share-nodes"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>Easy Peasy App</h4>
+                        <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam.</p>
+                        <div class="card-icons">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-share-nodes"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4>Money Maker</h4>
+                        <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.</p>
+                        <div class="card-icons">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-share-nodes"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="announcements">
-                    <h2>Announcements</h2>
-                    <div class="announcement-card">Site Maintenance</div>
-                    <div class="announcement-card">Community Share Day</div>
-                    <div class="announcement-card">Updated Privacy Policy</div>
+            </div>
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <div class="announcement-card">
+                    <div class="announcement-item">
+                        <h5>Site Maintenance</h5>
+                        <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue.</p>
+                    </div>
+                    <hr>
+                    <div class="announcement-item">
+                        <h5>Community Share Day</h5>
+                        <p>Nam vel lectus tincidunt, rutrum nulla eu, omare libero. Aliquam dictum accumsan porttitor.</p>
+                    </div>
+                    <hr>
+                    <div class="announcement-item">
+                        <h5>Updated Privacy Policy</h5>
+                        <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                    </div>
                 </div>
-                <div class="trending">
-                    <h2>Trending</h2>
-                    <div class="trending-card">@tegan World Peace Builder</div>
-                    <div class="trending-card">@morgan Super Cool Project</div>
-                    <div class="trending-card">@kendall Life Changing App</div>
-                    <div class="trending-card">@alex No Traffic Maker</div>
+            </div>
+            <div class="trending">
+                <h3>Trending</h3>
+                <div class="trending-card">
+                    <div class="trending-item">
+                        <div class="avatar-small"></div>
+                        <div>
+                            <p class="handle">@tegan</p>
+                            <p class="project">World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="avatar-small"></div>
+                        <div>
+                            <p class="handle">@morgan</p>
+                            <p class="project">Super Cool Project</p>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="avatar-small"></div>
+                        <div>
+                            <p class="handle">@kendall</p>
+                            <p class="project">Life Changing App</p>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <div class="avatar-small"></div>
+                        <div>
+                            <p class="handle">@alex</p>
+                            <p class="project">No Traffic Maker</p>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </div>
     </div>
 </body>
 
